@@ -14,5 +14,4 @@ RUN npm install
 
 USER app
 
-EXPOSE 8000
 CMD [ "node", "app.js" ]
