@@ -2,11 +2,11 @@
 
 const express = require('express')
 const request = require('request');
-
+const cors = require('cors');
 const PORT = 8000;
 app = express();
 
-
+app.use(cors());
 app.get('/', (_, res) => {
     url = "http://worldtimeapi.org/api/timezone/Europe/Moscow"
     request(url, (error, response, body) => {
